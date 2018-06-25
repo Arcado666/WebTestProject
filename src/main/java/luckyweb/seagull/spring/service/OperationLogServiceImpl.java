@@ -110,6 +110,6 @@ public class OperationLogServiceImpl implements OperationLogService{
 	
 	@Override
 	public List getSumIntegral() throws Exception{
-		return this.operationlogdao.listinfo("select operationer,SUM(t.operation_integral) as sumi from operation_log t GROUP BY t.operationer ORDER BY sumi");
+		return this.operationlogdao.listinfo("select operationer,SUM(t.operation_integral) as sumi from OPERATION_LOG t GROUP BY t.operationer ORDER BY sumi");
 	}
 }

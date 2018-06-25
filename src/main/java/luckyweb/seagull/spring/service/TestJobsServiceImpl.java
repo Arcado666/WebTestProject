@@ -153,13 +153,13 @@ public class TestJobsServiceImpl implements TestJobsService
 	@Override
 	public List<TestJobs> findJobsList()
 	{
-		return testJobsDao.findJobsList("select id,name,planproj from Test_Jobs  order by id asc ");
+		return testJobsDao.findJobsList("select id,name,planproj from TEST_JOBS  order by id asc ");
 	}
 
 	@Override
 	public List getpathList(int projectid)
 	{
-		return testJobsDao.findJobsList("SELECT clientpath FROM test_jobs where projectid="+projectid+" GROUP BY clientpath ");
+		return testJobsDao.findJobsList("SELECT clientpath FROM TEST_JOBS where projectid="+projectid+" GROUP BY clientpath ");
 	}
 	
 	/**

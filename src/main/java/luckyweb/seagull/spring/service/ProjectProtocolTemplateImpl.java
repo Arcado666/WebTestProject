@@ -109,7 +109,7 @@ public class ProjectProtocolTemplateImpl implements ProjectProtocolTemplateServi
 	
 	@Override
 	public List findstepsparamList(int steptype,int parentid,String fieldname) throws Exception {
-		String sql="select paramvalue,description FROM project_casestepsparams where steptype="+steptype+" and parentid="+parentid+" and fieldname='"+fieldname+"'";
+		String sql="select paramvalue,description FROM PROJECT_CASESTEPSPARAMS where steptype="+steptype+" and parentid="+parentid+" and fieldname='"+fieldname+"'";
 		return this.projectprotocoltemplatedao.findstepsparamList(sql);
 	}
 }

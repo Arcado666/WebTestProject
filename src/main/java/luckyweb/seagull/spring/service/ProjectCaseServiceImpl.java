@@ -105,13 +105,13 @@ public class ProjectCaseServiceImpl implements ProjectCaseService{
 	@Override
 	public String getCaseMaxIndex(int projectid) throws Exception {
 		// TODO Auto-generated method stub
-		return this.projectcaseDao.getCaseMaxIndex("select IFNULL(MAX(projectindex),0) from project_case where projectid="+projectid);
+		return this.projectcaseDao.getCaseMaxIndex("select IFNULL(MAX(projectindex),0) from PROJECT_CASE where projectid="+projectid);
 	}
 	
 	@Override
 	public String getBeforeDayRows(int beforedays) throws Exception {
 		// TODO Auto-generated method stub
 		String date=DateLib.beforNdFormat("yyyy-MM-dd", beforedays);
-		return this.projectcaseDao.getCaseMaxIndex("select count(*) from project_case t where t.time<'"+date+"'");
+		return this.projectcaseDao.getCaseMaxIndex("select count(*) from PROJECT_CASE t where t.time<'"+date+"'");
 	}
 }

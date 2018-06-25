@@ -6,9 +6,9 @@
 	<!--hibernate 这个文件里 配置数据源 连接池 -->
 	<session-factory>
 <!-- 指定连接数据库所用的驱动 -->
-  <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+  <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
   <!-- 指定连接数据库的url，hibernate连接的数据库名 -->
-  <property name="connection.url">jdbc:mysql://118.31.13.53:8080/test?serverTimezone=CTT&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
+  <property name="connection.url">jdbc:mysql://118.31.13.53:8080/luckyframedb?serverTimezone=CTT&amp;useUnicode=true&amp;characterEncoding=utf8&amp;useSSL=false</property>
   <property name="connection.useUnicode">true</property>
   <property name="connection.characterEncoding">utf-8</property>
   <!-- 指定连接数据库的用户名 -->
