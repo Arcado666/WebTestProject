@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>LuckyFrame-首页</title>
+<title>米商测试平台</title>
 
 <style type="text/css">
 .ibox {
@@ -56,12 +56,12 @@
 	<header id="head">
 	<div class="container">
 		<div class="row">
-			<h1 class="lead" style="font-size:84px;font-family:STXingkai;">简单    专业    高效</h1>
+			<!-- <h1 class="lead" style="font-size:84px;font-family:STXingkai;">新零售就用商米</h1> -->
 			<p class="tagline"></p>
 			<p>
 				<!-- <a class="btn btn-default btn-lg" role="button">MORE INFO</a> -->
 				<a class="btn btn-action btn-lg" role="button"
-					href="javascript:window.open('http://www.luckyframe.cn')">了解更多</a>
+					href="javascript:window.open('https://mall.sunmi.com')">了解更多</a>
 			</p>
 		</div>
 	</div>
@@ -154,58 +154,8 @@
 	<div class="jumbotron top-space" style="margin-top:10px">
 		<div class="container">
 
-			<h3 class="text-center thin">LuckyFrame 能做的不止于此...</h3>
+			<h3 class="text-center thin">米商测试平台</h3>
 
-			<div class="row">
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption">
-						<h4>
-							<i class="fa fa-cogs fa-5"></i>使用便捷
-						</h4>
-					</div>
-					<div class="h-body text-center"
-						style="text-align: left; font-size: 20px">
-						<p>HTTP+Socket+Web UI免编码，自定义测试驱动桩关键字驱动，灵活的调度配置方式，强大的问题定位支持。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption">
-						<h4>
-							<i class="fa fa-tasks fa-5"></i>调度灵活
-						</h4>
-					</div>
-					<div class="h-body text-center"
-						style="text-align: left; font-size: 20px">
-						<p>Web-Client分布式测试，客户端多线程运行，线程数任意配置，Web端负责基本信息管理展示，Client负责用例执行。
-						</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption">
-						<h4>
-							<i class="fa fa-file-text-o fa-5"></i>界面清新
-						</h4>
-					</div>
-					<div class="h-body text-center"
-						style="text-align: left; font-size: 20px">
-						<p>整套Web系统基于Bootstrap以及多种此风格插件，自动化特有用例设计结构以及编辑方式，支持在线调试用例。</p>
-					</div>
-				</div>
-				<div class="col-md-3 col-sm-6 highlight">
-					<div class="h-caption">
-						<h4>
-							<i class="fa fa-check-circle-o fa-5"></i>质量管理
-						</h4>
-					</div>
-					<div class="h-body text-center"
-						style="text-align: left; font-size: 20px">
-						<p>提供项目质量相关数据收集、统计 、分析，让测试人员的工作从单纯的自动化往质量方面做得更广泛，更专业。</p>
-					</div>
-				</div>
-			</div>
-			<!-- /row  -->
-
-		</div>
 	</div>
 	<div>
 		<%@ include file="/footer.jsp"%>

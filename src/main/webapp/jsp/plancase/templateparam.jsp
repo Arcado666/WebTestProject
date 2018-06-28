@@ -214,7 +214,7 @@
 	<script type="text/javascript">
 		$(document).ready(
 				function() {
-					$('#paramtable').bootstrapValidator({
+					$('#templateparams').bootstrapValidator({
 						message : '当前填写信息无效！',
 						//live: 'submitted',
 						feedbackIcons : {
@@ -230,9 +230,9 @@
 										message : '【参数名】不能为空'
 									},
 									stringLength : {
-										min : 2,
+										min : 1,
 										max : 50,
-										message : '【参数名】长度必须在2~50个字符区间'
+										message : '【参数名】长度必须在1~50个字符区间'
 									}
 								}
 							},
@@ -264,6 +264,12 @@
 
 		// 提交表单
 		function check_form() {
+	        var casesteps = $('#templateparams');
+	        casesteps.data('bootstrapValidator').validate();
+	        if (!casesteps.data('bootstrapValidator').isValid()) {
+	            return;
+	        }
+	        
 			$("#submit").attr("disabled",true);
 			var oTable = document.getElementById("paramtbody");
 			var json = "";

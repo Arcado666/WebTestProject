@@ -284,6 +284,9 @@ public class LogdetailController
 			logdata[0]="0";
 		}else{
 			double perrl =(double)casecount/45;
+			if (days == 0) {
+				days = 1;
+			}
 			perrl = perrl/days;
 			BigDecimal bperrl =new BigDecimal(perrl);
 			perrl=bperrl.setScale(2,BigDecimal.ROUND_HALF_UP).doubleValue();

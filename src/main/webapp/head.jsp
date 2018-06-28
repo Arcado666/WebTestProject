@@ -42,7 +42,7 @@
 			<div class="navbar-header" style="margin-left:3%">
 				<!-- Button for smallest screens -->
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-				<a class="navbar-brand" href="/index.jsp"><img src="/progressus/assets/images/logo.png" alt="Progressus HTML5 template"></a>
+				<a class="navbar-brand" href="/"><img src="/progressus/assets/images/logo.png" alt="Progressus HTML5 template"></a>
 			</div>
 			<div class="navbar-collapse collapse" style="float:left;">
 				<ul class="nav navbar-nav pull-right">
@@ -71,30 +71,22 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-weight:bold;">测试工具<b class="caret"></b></a>
 						<ul class="dropdown-menu" style="background-color:rgba(88,87,86,0.6);">
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX/testlink/login.php')">用例管理(TestLink)</a></li>
+							<!-- <li><a href="javascript:window.open('http://XXX.XX.XX.XX/testlink/login.php')">用例管理(TestLink)</a></li>
 							<li><a href="javascript:window.open('http://XXX.XX.XX.XX:8080')">缺陷管理(JIRA)</a></li>
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX/zentao/')">项目管理(ZenTao)</a></li>
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX:18080/jenkins/')">持续集成(Jenkins)</a></li>
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX/users/sign_in')">代码管理(GIT)</a></li>
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX:9000/')">代码质量(Sonar)</a></li>
+							<li><a href="javascript:window.open('http://XXX.XX.XX.XX/zentao/')">项目管理(ZenTao)</a></li> -->
+							<li><a href="javascript:window.open('http://172.16.0.72/')">持续集成(Jenkins)</a></li>
+							<li><a href="javascript:window.open('http://code.sunmi.com')">代码管理(GIT)</a></li>
+							<!-- <li><a href="javascript:window.open('http://XXX.XX.XX.XX:9000/')">代码质量(Sonar)</a></li> -->
 						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-weight:bold;">测试环境<b class="caret"></b></a>
 						<ul class="dropdown-menu" style="background-color:rgba(88,87,86,0.6);">
-							<li><a href="javascript:window.open('http://XXX.XX.XX.XX:8080/test1/')">测试系统一</a></li>
-                            <li><a href="javascript:window.open('http://XXX.XX.XX.XX:8080/tesst2/')">测试系统二</a></li>
+							<li><a href="javascript:window.open('http://192.168.88.251:4444/grid/admin/live')">在线观看web测试实时状况</a></li>
+                            <li><a href="javascript:window.open('http://192.168.88.251:4444/dashboard/#')">在线回放web测试</a></li>
 						</ul>
 					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-weight:bold;">关于<b class="caret"></b></a>
-						<ul class="dropdown-menu" style="background-color:rgba(88,87,86,0.6);">
-							<li><a href="javascript:window.open('http://www.luckyframe.cn')">官网首页</a></li>
-							<li><a href="javascript:window.open('http://www.luckyframe.cn/book/yhsc/syschyy-24.html')">用户手册</a></li>
-							<li><a href="javascript:window.open('http://www.luckyframe.cn/allwz.html')">技巧分享</a></li>
-							<li><a href="javascript:window.open('http://www.luckyframe.cn/page/aboutme.html')">关于LuckyFrame</a></li>
-						</ul>
-					</li>
+					
 				</ul>
 			</div><!--/.nav-collapse -->
 			<div class="navbar-collapse collapse" style="margin-right:3%">

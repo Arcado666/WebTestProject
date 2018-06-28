@@ -125,7 +125,7 @@
 										</td>
 										<td width="8%">
 											<div class="form-group">
-												<sf:select type="text" class="form-control" align-items="left" path="steptype" id="steptype${i.count}" onChange="getObIndex(this)">                           
+												<sf:select type="text" class="form-control" align-items="left" path="steptype" id="steptype${i.count}" onChange="getObIndex(this)">                           
 													<option value="0" <c:if test="${t.steptype==0 }"> selected="selected"</c:if>>接口</option>
 													<option value="1" <c:if test="${t.steptype==1 }"> selected="selected"</c:if>>Web UI</option>
 													<option value="2" <c:if test="${t.steptype==2 }"> selected="selected"</c:if>>HTTP</option>
@@ -228,7 +228,7 @@
         }
     });
 
-    $(function () {
+    $(document).ready(function () {
         $('#casesteps').bootstrapValidator({
             message: '当前填写信息无效！',
             //live: 'submitted',
@@ -255,9 +255,9 @@
                             message: '【方法 | 操作】不能为空'
                         },
                         stringLength: {
-                            min: 2,
+                            min: 1,
                             max: 100,
-                            message: '【方法 | 操作】长度必须在2~100个字符区间'
+                            message: '【方法 | 操作】长度必须在1~100个字符区间'
                         }
                     }
                 },
@@ -278,6 +278,24 @@
                             min: 0,
                             max: 50,
                             message: '【步骤动作】长度必须小于50个字符'
+                        },
+                        callback: {
+                            message: '类型是HTTP，请选择协议模板',
+                            callback:function(value,validator,$field){
+                            	var num=$field.attr("id").substring(6);
+                            	var steps;
+                            	if(casesteps.steptype.size==0){
+                            		steps=casesteps.steptype.value
+                            	}else{
+                            		steps=casesteps.steptype[num-1].value
+                            	}
+                            	
+                             	if(steps=="2" && value==""){
+                            		return false;
+                            	}else{                        		
+                            		return true;
+                            	} 
+                            }
                         }
                     }
                 },
@@ -312,16 +330,17 @@
             $form.find('.alert').html('步骤创建成功！');
         });
     });
-
+    
     String.prototype.replaceAll = function (s1, s2) {
         return this.replace(new RegExp(s1, "gm"), s2);
     }
-
+    
     // 提交表单
     function check_form() {
         var casesteps = $('#casesteps');
         casesteps.data('bootstrapValidator').validate();
-        if (! casesteps.data('bootstrapValidator').isValid()) {
+        if (!casesteps.data('bootstrapValidator').isValid()) {
+        	$('#save').attr('disabled', false);
             return;
         }
 

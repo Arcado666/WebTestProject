@@ -41,10 +41,8 @@ function pressKey() {
 					<div class="panel panel-default">
 					
 					    <div id="login" class="panel-body" style="display:none;height:280px">
-					       <h3 class="thin text-center">欢迎您使用质量平台！</h3>
-					       <label><a id="userloginname" style="color:#EEAD0E;font-family:'微软雅黑'; font-size: 22px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;您好，您在使用LuckyFrame的过程中，有任何不爽或是不满意的地方，
-					       或是对我们有好的建议都可以直接加入进入<a href="javascript:window.open('http://www.luckyframe.cn')">LuckyFrame官网</a>或是加入QQ交流群487954492与我们沟通。
-					   <br/>感谢支持！
+					       <h3 class="thin text-center">欢迎您使用米商测试平台！</h3>
+					       <label><a id="userloginname" style="color:#EEAD0E;font-family:'微软雅黑'; font-size: 22px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
 					       将在 <span id="mes" style="color:#ff0000; font-size: 15px;">3</span> 秒钟后<a id="userloginname" href="javascript:history.back();" style="font-family:'微软雅黑'; font-size: 15px;">返回上一页面</a>!
 					       </label>
 					    </div>
