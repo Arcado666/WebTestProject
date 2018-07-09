@@ -34,16 +34,16 @@
 							<div class="modal-body">
 							  <form class="form-horizontal">
 								<div class="form-group">
-								    <label class="col-sm-12" style="font-weight:normal"><b>整体说明：</b>调试按钮，只有用例类型为【接口测试】才可用。详细使用方法可以参考官网<a href="http://www.luckyframe.cn/book/yhsc/syschyy-24.html">用户手册</a></label>
+								    <label class="col-sm-12" style="font-weight:normal"><b>整体说明：</b>调试按钮，只有用例类型为【接口测试】才可用。</label>
 								    <label class="col-sm-12" style="font-weight:normal"><b>Web UI&移动端UI说明：</b>当你的步骤类型为Web UI时，定位路径是指元素的定位路径，如果没有可为空;操作列点击输入框会自动联想系统内置的方法，
 								    并显示在下拉列表中，选择即可;参数列是针对方法的，比如你用到sendkeys方法,那么参数列就是sendkeys需要输入的值;步骤动作一般是指当前步骤操作完成后，等待多少时间，格式为：10*Wait;预期结果列一般留空，
-								    输入值时填写格式为“check(属性=属性值)”，用于检查步骤动作执行完成后，对应的元素是否存在,更多细节可以参考<a href="http://www.luckyframe.cn/allwz/29.html">官网文章</a></label>
+								    输入值时填写格式为“check(属性=属性值)”，用于检查步骤动作执行完成后，对应的元素是否存在</label>
 								    <label class="col-sm-12" style="font-weight:normal"></label>
 								    <label class="col-sm-12" style="font-weight:normal"><b>自定义驱动接口说明：</b>当你的步骤类型为接口时，包路径是测试类的包路径，不能为空;方法列就是需要调用的测试方法名;
-								    参数列是针对方法的，测试方法需要传几个参数就填写几个参数，中间用|分隔;步骤动作一般是指当前步骤操作完成后，等待多少时间，格式为：10*Wait;预期结果是用来匹配测试方法返回值的;更多细节可以参考<a href="http://www.luckyframe.cn/allwz/testdrver-34.html">官网文章</a></label>
+								    参数列是针对方法的，测试方法需要传几个参数就填写几个参数，中间用|分隔;步骤动作一般是指当前步骤操作完成后，等待多少时间，格式为：10*Wait;预期结果是用来匹配测试方法返回值的</label>
 								    <label class="col-sm-12" style="font-weight:normal"></label>
 								    <label class="col-sm-12" style="font-weight:normal"><b>HTTP接口说明：</b>当你的步骤类型为HTTP时，定位路径是HTTP测试请求的URL地址，不能为空;方法列是HTTP请求的类型;
-								    参数列是针对协议模板的，可以对模板中的默认值进行替换，需要替换多个参数时，中间用|分隔;步骤动作一般是指当前步骤操作完成后，等待多少时间，格式为：10*Wait;预期结果是用来匹配HTTP请求返回值的;更多细节可以参考<a href="http://www.luckyframe.cn/allwz/httpcs-16.html">官网文章</a></label>
+								    参数列是针对协议模板的，可以对模板中的默认值进行替换，需要替换多个参数时，中间用|分隔;步骤动作一般是指当前步骤操作完成后，等待多少时间，格式为：10*Wait;预期结果是用来匹配HTTP请求返回值的</label>
 								</div>
 								</form>
 							</div>

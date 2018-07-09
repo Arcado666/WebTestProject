@@ -342,7 +342,7 @@
 								}								
 							}else{
 								return '<font style="color:#ff0000">'+value+'</font>&nbsp;&nbsp;&nbsp;&nbsp;'+
-								'<a href="javascript:window.open(\'/logDetail/showImage.do?filename='+ row.imgname+ '.png&logid='+row.logid+'\')">错误截图</a> ';
+								'<a href="/logDetail/showImage.do?filename='+ row.imgname+ '.png&logid='+row.logid+'" target="_blank">错误截图</a> ';
 							}
 						}
 					}, ],

@@ -767,7 +767,13 @@ public class TestJobsController
 		ArrayList<String> pathlist=new ArrayList<String>();
 		TestClient tc=tcservice.getClient(jobload.getClientip());
 
-		String clientpath = tc.getClientpath();
+		String clientpath;
+		if (tc != null) {
+			clientpath = tc.getClientpath();
+		}
+		else {
+			clientpath = jobload.getClientip();
+		}
 		String[] temp = clientpath.split(";", -1);
 		for (String pathtemp : temp) {
 			if (!StrLib.isEmpty(pathtemp)) {
@@ -1009,6 +1015,9 @@ public class TestJobsController
 		}
 		String result="获取日志远程链接失败！";
 		try{
+			if (clientip.equals("0.0.0.0")) {
+				clientip="localhost";
+			}
     		//调用远程对象，注意RMI路径与接口必须与服务器配置一致
     		RunService service=(RunService)Naming.lookup("rmi://"+clientip+":6633/RunService");
     		result=service.getlogdetail(storeName);

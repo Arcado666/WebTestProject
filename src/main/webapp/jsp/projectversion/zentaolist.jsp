@@ -88,7 +88,7 @@
 					style="width:100px" value="" />&nbsp;&nbsp;&nbsp;
 				<input type="radio" name="reporttype" id="reporttype" value="1" checked/><font color="#95CACA">按完成人</font>
 				<input type="radio" name="reporttype" id="reporttype" value="2" /><font color="#95CACA">按版本</font>
-				<a href="javascript:window.open('/zentao/showreport.do?reporttype='+$('#reporttype:checked').val()+'&startDate='+$('#startDate').val()+
+				<a href="/zentao/showreport.do?reporttype='+$('#reporttype:checked').val()+'&startDate='+$('#startDate').val()+
 	  '&endDate='+$('#endDate').val());"
 				target=_blank style="text-decoration: none;"> <span
 					class="btnold STYLE1" style="width: 70px;"> 报表查询</span></a></td>

@@ -74,16 +74,16 @@
 							<!-- <li><a href="javascript:window.open('http://XXX.XX.XX.XX/testlink/login.php')">用例管理(TestLink)</a></li>
 							<li><a href="javascript:window.open('http://XXX.XX.XX.XX:8080')">缺陷管理(JIRA)</a></li>
 							<li><a href="javascript:window.open('http://XXX.XX.XX.XX/zentao/')">项目管理(ZenTao)</a></li> -->
-							<li><a href="javascript:window.open('http://172.16.0.72/')">持续集成(Jenkins)</a></li>
-							<li><a href="javascript:window.open('http://code.sunmi.com')">代码管理(GIT)</a></li>
+							<li><a href="http://172.16.0.72/" target="_blank">持续集成(Jenkins)</a></li>
+							<li><a href="http://code.sunmi.com" target="_blank">代码管理(GIT)</a></li>
 							<!-- <li><a href="javascript:window.open('http://XXX.XX.XX.XX:9000/')">代码质量(Sonar)</a></li> -->
 						</ul>
 					</li>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" style="font-weight:bold;">测试环境<b class="caret"></b></a>
 						<ul class="dropdown-menu" style="background-color:rgba(88,87,86,0.6);">
-							<li><a href="javascript:window.open('http://192.168.88.251:4444/grid/admin/live')">在线观看web测试实时状况</a></li>
-                            <li><a href="javascript:window.open('http://192.168.88.251:4444/dashboard/#')">在线回放web测试</a></li>
+							<li><a href="http://192.168.88.251:4444/grid/admin/live" target="_blank">在线观看web测试实时状况</a></li>
+                            <li><a href="http://192.168.88.251:4444/dashboard/#" target="_blank">在线回放web测试</a></li>
 						</ul>
 					</li>
 					

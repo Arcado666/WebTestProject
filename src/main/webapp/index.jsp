@@ -61,7 +61,7 @@
 			<p>
 				<!-- <a class="btn btn-default btn-lg" role="button">MORE INFO</a> -->
 				<a class="btn btn-action btn-lg" role="button"
-					href="javascript:window.open('https://mall.sunmi.com')">了解更多</a>
+					href="https://mall.sunmi.com" target="_blank">了解更多</a>
 			</p>
 		</div>
 	</div>

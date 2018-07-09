@@ -368,7 +368,7 @@ public class ProjectCasestepsController {
 
 	@RequestMapping(value = "/refreshlog.do")
 	private void refreshDebugLog(HttpServletRequest request, HttpServletResponse response) throws IOException {
-		response.setCharacterEncoding("utf-8");
+		response.setCharacterEncoding("GBK");
 		PrintWriter pw = response.getWriter();
 		JSONObject json = new JSONObject();
 		String casesign = request.getParameter("casesign");

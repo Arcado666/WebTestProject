@@ -172,7 +172,6 @@ public class UserLoginController {
 		}else{
 			result = false;
 		}
-
 		return result;
 	}
 	
