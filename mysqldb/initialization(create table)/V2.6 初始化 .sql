@@ -727,6 +727,8 @@ insert into PROJECT_CASESTEPSPARAMS (id, steptype, parentid, fieldname,paramvalu
 values (92, 1, 0, 'operation','scrollintoview','将目标对象滚动到可视');
 insert into PROJECT_CASESTEPSPARAMS (id, steptype, parentid, fieldname,paramvalue,description)
 values (93, 4, 0, 'operation','runcase','调用指定接口用例');
+insert into PROJECT_CASESTEPSPARAMS (steptype,parentid,fieldname,paramvalue,description`) 
+values (1,0, 'operation', 'goback', '浏览器返回上个页面');
 /*插入角色默认定义*/
 insert into USER_ROLE (id, role, permission)
 values (2, '测试工程师', 'acc_1,acc_2,acc_3,');

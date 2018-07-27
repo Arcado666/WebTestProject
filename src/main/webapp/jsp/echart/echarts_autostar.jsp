@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>LuckyFrame质量之星</title>
+<title>米商质量之星</title>
 
 </head>
 <body>
@@ -90,8 +90,8 @@
         				success:function (result){
         					option = {
         			                   "title": {
-        			                      "text": "LuckyFrame质量之星",
-        			                      "subtext": "积分排行榜   From LuckyFrame",
+        			                      "text": "米商质量之星",
+        			                      "subtext": "积分排行榜 ",
         			                      "left": "center",
         			                      "y": "10",
         			                      "textStyle": {
